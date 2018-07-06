@@ -13,6 +13,12 @@
 		C02CD34C20D24CE500BE1345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02CD34A20D24CE500BE1345 /* Main.storyboard */; };
 		C02CD34E20D24CE600BE1345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02CD34D20D24CE600BE1345 /* Assets.xcassets */; };
 		C02CD35120D24CE600BE1345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02CD34F20D24CE600BE1345 /* LaunchScreen.storyboard */; };
+		C02ED1A520E4D9DA006CF217 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02ED1A420E4D9DA006CF217 /* CoreDataManager.swift */; };
+		C033AC4120E0EB0B002EA619 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033AC4020E0EB0B002EA619 /* Common.swift */; };
+		C033C37B20E38DCF00907EE2 /* MyFindMyFriendApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C033C37920E38DCF00907EE2 /* MyFindMyFriendApp.xcdatamodeld */; };
+		C0650EAA20DB3F9C008205C6 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0650EA920DB3F9C008205C6 /* LoginTableViewController.swift */; };
+		C0650EAC20DB6CCC008205C6 /* LocationUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0650EAB20DB6CCC008205C6 /* LocationUploader.swift */; };
+		C0B5991A20D9FB3A002B67AE /* LocationDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B5991920D9FB3A002B67AE /* LocationDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		C02CD34D20D24CE600BE1345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C02CD35020D24CE600BE1345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C02CD35220D24CE600BE1345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02ED1A420E4D9DA006CF217 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C033AC4020E0EB0B002EA619 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		C033C37A20E38DCF00907EE2 /* MyFindMyFriendApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFindMyFriendApp.xcdatamodel; sourceTree = "<group>"; };
+		C0650EA920DB3F9C008205C6 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		C0650EAB20DB6CCC008205C6 /* LocationUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUploader.swift; sourceTree = "<group>"; };
+		C0B5991920D9FB3A002B67AE /* LocationDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				C02CD34420D24CE500BE1345 /* AppDelegate.swift */,
+				C033C37920E38DCF00907EE2 /* MyFindMyFriendApp.xcdatamodeld */,
+				C0650EA920DB3F9C008205C6 /* LoginTableViewController.swift */,
+				C02ED1A420E4D9DA006CF217 /* CoreDataManager.swift */,
 				C02CD34620D24CE500BE1345 /* MasterViewController.swift */,
 				C02CD34820D24CE500BE1345 /* DetailViewController.swift */,
+				C033AC4020E0EB0B002EA619 /* Common.swift */,
+				C0B5991920D9FB3A002B67AE /* LocationDownloader.swift */,
+				C0650EAB20DB6CCC008205C6 /* LocationUploader.swift */,
 				C02CD34A20D24CE500BE1345 /* Main.storyboard */,
 				C02CD34D20D24CE600BE1345 /* Assets.xcassets */,
 				C02CD34F20D24CE600BE1345 /* LaunchScreen.storyboard */,
@@ -99,6 +117,12 @@
 				TargetAttributes = {
 					C02CD34020D24CE500BE1345 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,9 +162,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0650EAA20DB3F9C008205C6 /* LoginTableViewController.swift in Sources */,
 				C02CD34920D24CE500BE1345 /* DetailViewController.swift in Sources */,
+				C0650EAC20DB6CCC008205C6 /* LocationUploader.swift in Sources */,
 				C02CD34720D24CE500BE1345 /* MasterViewController.swift in Sources */,
+				C033C37B20E38DCF00907EE2 /* MyFindMyFriendApp.xcdatamodeld in Sources */,
 				C02CD34520D24CE500BE1345 /* AppDelegate.swift in Sources */,
+				C02ED1A520E4D9DA006CF217 /* CoreDataManager.swift in Sources */,
+				C0B5991A20D9FB3A002B67AE /* LocationDownloader.swift in Sources */,
+				C033AC4120E0EB0B002EA619 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +314,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WN2BCRJWNR;
 				INFOPLIST_FILE = MyFindMyFriendApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingtayang.MyFindMyFriendApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,14 +336,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WN2BCRJWNR;
 				INFOPLIST_FILE = MyFindMyFriendApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingtayang.MyFindMyFriendApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +375,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C033C37920E38DCF00907EE2 /* MyFindMyFriendApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C033C37A20E38DCF00907EE2 /* MyFindMyFriendApp.xcdatamodel */,
+			);
+			currentVersion = C033C37A20E38DCF00907EE2 /* MyFindMyFriendApp.xcdatamodel */;
+			path = MyFindMyFriendApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C02CD33920D24CE500BE1345 /* Project object */;
 }
